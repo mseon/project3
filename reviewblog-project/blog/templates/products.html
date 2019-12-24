@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <style type="text/css">
+      #logo {text-align: center; color: #803232; font-size: 50pt;}
+      #container {margin-left:210px; float: left;}
+      div {border: 2px solid; padding: 10px; width: 300px; height: 450px; float: left; margin-bottom: 20px; position: static;}
+      header {height: 53px; background-color: #DCAD67; border-color: #DCAD67 border: 1px solid  #253342; position: fixed; width: 100% ; top: 0; left: 0;}
+      #head {color: #8B6331; font-size: 20pt; margin-top: 7px;margin-left: 80px;}
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <p id="head"><b>Review Blog</b></p>
+    </header>
+
+    <p id="logo">NIKE</p>
+
+    <span id="container">
+      {% for blog in blogs %}
+      <div class="div_box">
+      
+        <a href="/review"><img src="{{blog.image.url}}"></a><br><br>
+    
+        <text><b>{{blog.character}}</b>
+          <br><br>
+          <b>Price</b> 169,000</text>
+      </div>
+      {% endfor %}
+    </span>
+
+    <span id="container">
+      <div class="div_box">
+        <a href="/review"><img src="http://127.0.0.1:8000/media/images/nike2.jpg" width="300" height="300"></a><br><br>
+        <text><b>나이키 와일드 런 윈드러너 재킷</b><br><br><b>Price</b> 149,000</text>
+      </div>
+    </span>
+
+    <span id="container">
+      <div class="div_box">
+        <a href="/review"><img src="http://127.0.0.1:8000/media/images/nike3.jpg" width="300" height="300"></a><br><br>
+        <text><b>나이키 스포츠웨어 에어 크롭 롱슬리브 탑</b><br><br><b>Price</b> 59,000</text>
+      </div>
+    </span>
+
+    <span id="container">
+      <div class="div_box">
+        <a href="/review"><img src="http://127.0.0.1:8000/media/images/nike4.jpg" width="300" height="300"></a><br><br>
+        <text><b>나이키 에어맥스 95 OG</b><br><br><b>Price</b> 179,000</text>
+      </div>
+    </span>
+
+    <span id="container">
+      <div class="div_box">
+        <a href="/review"><img src="http://127.0.0.1:8000/media/images/nike5.jpg" width="300" height="300"></a><br><br>
+        <text><b>나이키 에어맥스 270 리액트</b><br><br><b>Price</b> 179,000</text>
+      </div>
+    </span>
+
+
+  </body>
+</html>

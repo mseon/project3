@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>건의사항</title>
+   
+</head>
+<style type="text/css">
+   #divCategory{
+
+      width: 200px;
+
+   }
+   #divCategory ul{
+      padding: 0;
+      list-style: none;
+   }
+   #divCategory ul li{
+      border-top: 1px 
+      border-bottom: 1px 
+   }
+   #divCategory ul li a{
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+   }
+   #divCategory ul li:first-child {border-top: none;}
+   #divCategory ul li:last-child {border-bottom: none;}
+   #divCategory ul li a:hover {background: gray;}
+
+   #Textarea textarea{
+      width: 200px;
+      height: 20px;
+   }
+   #Contentarea textarea{
+      width: 500px;
+      height: 500px;
+      margin-left: 50px;
+   }
+   #Submit button{
+      margin-left: 500px; 
+   }
+   h2 {margin-left: 10px;}
+   h3 {margin-left: 15px;}
+</style>
+
+<body>
+   <h2>건의사항</h2>
+   <hr/>
+   <div id="Textarea">
+   <h3>&nbsp;&nbsp;&nbsp;제목&nbsp;&nbsp;&nbsp;
+   <textarea id="title" name="title" valure=""placeholder="제목을 입력해주세요."></textarea></h3>
+   <h3>카테고리
+      <textarea id="category" name="category" placeholder="카테고리를 입력해주세요"></textarea></h3>
+      <div id="Contentarea">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <textarea id="content" name="content" placeholder="내용을 입력해주세요"></textarea>
+   </div>
+   <dir id="Submit">
+      <button id="submit">작성</button>
+   </dir>
+</div>
+</body>
+</html>

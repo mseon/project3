@@ -21,5 +21,16 @@ import blog.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', blog.views.main, name = 'main')
+    path('',blog.views.main, name='main'),
+    path('products/',blog.views.products, name='products'),
+    path('products2/',blog.views.products2, name='products2'),
+    path('products3/',blog.views.products3, name='products3'),
+    path('products4/',blog.views.products4, name='products4'),
+    path('products5/',blog.views.products5, name='products5'),
+    path('products6/',blog.views.products6, name='products6'),
+    path('products7/',blog.views.products7, name='products7'),
+    path('products8/',blog.views.products8, name='products8'),
+    path('products9/',blog.views.products9, name='products9'),
+    path('review/',blog.views.review, name='review'),
+    path('suggest/',blog.views.suggest, name='suggest'),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
